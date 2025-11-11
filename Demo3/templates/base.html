@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>      <!-- 定义块，子模板可以重写块内容 -->
+</head>
+<body>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">新闻</a></li>
+    </ul>
+    {% block body %}
+    {% endblock %}      <!-- 定义块，子模板可以重写块内容 -->
+    <footer>这是底部的标签</footer>
+</body>
+</html>

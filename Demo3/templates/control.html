@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网吧询问页面</title>
+</head>
+<body>
+    {% if age>18 %}      
+        <div>你年满18周岁可以进入网吧</div>
+    {% elif age==18 %}
+        <div>你已经满18周岁了,但是需要父母同意才能进入网吧</div>
+    {% elif age<18 %}
+        <div>你还未满18周岁,不能进入网吧</div>
+    {% endif %}      <!-- 在if语句的末尾必须加上endif语句 -->
+
+
+    {% for book in books %}
+        <div>书名：{{book.name}} , 作者： {{book.author}}</div>
+    {% endfor %}
+</body>
+</html>
